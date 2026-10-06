@@ -1,0 +1,319 @@
+/*------------------------------Formulario------------------------------*/
+
+h3 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+form {
+    font-family: 'Wittgenstein', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(82, 88, 88);
+    margin-bottom: 8rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    padding-right: 1rem;
+}
+
+.input1, .input2 {
+    width: 19%;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+/*--------------------Formulario Media Queries--------------*/
+
+@media (max-width: 1600px) {
+    .input1, .input2 {
+        width: 23%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .input1, .input2 {
+        width: 35.58%;
+    }
+}
+
+@media (max-width: 768px) {
+    .input1, .input2 {
+        width: 47.7%;
+    }   
+}
+
+@media (max-width: 600px) {
+    .input1, .input2 {
+        width: 61%;
+    }
+
+    form {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .input1, .input2 {
+        width: 65%;
+    }
+
+    .textarea {
+        width: 65%;
+    }
+}    
+/*---------------------------------Mapa y Tabla------------------------------*/
+
+table {
+    font-family: 'Wittgenstein', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(82, 88, 88);
+    width: 25vw;
+    height: 25vh;
+
+}
+
+.mapa {
+    width: 32vw;
+    height: 58vh;
+}
+
+.mapa_tabla {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 8rem;
+   
+}
+
+/*-----------------Media Queries Mapa y Tabla-----------------*/
+
+
+@media (max-width: 1130px) {
+    .mapa_tabla {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 6rem;
+    }
+
+    .mapa {
+        width: 40vw;
+        height: 40vh;
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+
+    table {
+        width: 40vw;
+        height: 20vh;
+        align-self: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .mapa {
+        width: 50vw;
+        height: 40vh;
+    }
+
+    table {
+        width: 52vw;
+        height: 18vh;
+    }
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .mapa {
+        width: 50vw;
+        height: 30vh;
+    }
+
+    table {
+        width: 52vw;
+        height: 18vh;
+    }   
+    
+}
+
+@media (max-width: 360px) {
+    .mapa {
+        width: 60vw;
+        height: 30vh;
+    }
+
+    table {
+        width: 60vw;
+        height: 18vh;
+    }   
+    
+}
+
+
+/*-----------------------------------Reseñas---------------------------------------*/
+
+.resenas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+    margin: 6rem 3rem;
+
+}
+
+.estrellas {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+h5 {
+    color: orange;
+}
+
+.resena1, .resena2, .resena3 {
+    font-size: 2.5vw;
+    font-style: italic;
+    width: 80%;
+    height: 100%;
+    border: 2px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+
+.resena1:hover, .resena2:hover, .resena3:hover {
+    width:100%;
+}
+
+.resena1 {
+    grid-column: 1;
+ }
+
+
+.resena2 {
+    grid-column: 2;
+ }
+
+.resena3 {
+    grid-column: 3;
+}
+
+
+.texto1, .texto2, .texto3 {
+    font-size: 1rem;
+}
+
+
+.foto_cliente1, .foto_cliente2, .foto_cliente3 {
+    border-radius: 50% 50%;
+    width: 27%;
+    height: auto;
+    margin-bottom: 1.2rem;
+    object-fit: contain;
+}
+
+
+
+/*--------------------Media Queries Reseñas-------------------*/
+
+@media (max-width: 992px) {
+    .resenas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    .resena1, .resena2, .resena3 {
+        width: 48%;
+        height: 100%;
+    }
+
+    .resena1:hover, .resena2:hover, .resena3:hover {
+        width:50%;
+    }
+
+    .resena1, .resena2 {
+        margin-bottom: 2rem;
+    }
+
+    h5 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .resenas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 88%;
+        margin-inline: auto;
+    }
+
+    .resena1, .resena2, .resena3 {
+        width: 80%;
+        height: 100%;
+        font-size: 6vw;
+        }
+
+    .resena1:hover, .resena2:hover, .resena3:hover {
+        width:90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .resenas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        margin-top: 1rem;
+        margin-inline: auto;
+    }
+
+    .resena1, .resena2, .resena3 {
+        width: 85%;
+        height: 100%;
+        font-size: 6vw;
+        margin-inline: auto;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 360px) {
+    h5 {
+        font-size: 1.7rem;
+    }
+}
+    
+
+
+

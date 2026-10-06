@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'Trade_Winds';
+    src: url('./fuentes/Trade_Witt/Trade_Winds/TradeWinds-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Wittgenstein';
+    src: url('./fuentes/Trade_Witt/Wittgenstein/Wittgenstein-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------Barra de Navegación--------------------------------------*/
+nav {
+    font-family: 'Trade_Winds', sans-serif;
+    background-color: orangered;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.75rem;
+}
+
+select {
+    display: none;
+}
+
+
+/*---------------Barra de Navegación Media Queries-------------*/
+
+@media (max-width: 1024px) {
+    a {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    a {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        display: none;    
+    }
+
+    select {
+        display: block;
+        background-color: orangered;
+        width: 28%;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .nav2 {
+        background-color: orangered;
+    }
+
+}
+
+
+
+/*----------------------------------Header-----------------------------------------------*/
+
+.header_secciones {
+    font-family: 'Trade_Winds', sans-serif;
+    color: white;
+    font-size: 6rem;
+    margin: 0;
+    padding-left: 5rem;
+    background-image: url('./imagenes/Portada secciones.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+}
+
+
+
+/*------------------Header Media Queries-----------------------*/
+
+
+@media (max-width: 1600px) {
+    .header_secciones {
+        font-size: 5.4vw;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .header_secciones {
+        height: 18rem;
+        padding-left: 2.7rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header_secciones {
+        font-size: 2.3rem;
+        display: flex;
+        align-items: center;
+        height: 12rem;
+        padding-left: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header_secciones {
+        font-size: 1.8rem;
+        height: 10rem;
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header_secciones {
+        font-size: 1.6rem;
+        height: 8rem;
+        padding-left: 1.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .header_secciones {
+        padding-left: 1.1rem;
+    }
+}
+
+/*-------------------------------------------Texto--------------------------------------------*/
+
+main p {
+    font-family: 'Wittgenstein', sans-serif;
+    color: rgb(82, 88, 88);
+    font-size: 1.4rem;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Trade_Winds', sans-serif;
+}
+
+h2, h3 {
+    color: rgb(23, 62, 119);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/*--------------------------Texto Media Queries------------------------*/
+
+@media (max-width: 1600px) {
+    main p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    main p {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.9rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    main p {
+        font-size: 1.1rem;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    main p {
+        font-size: 1.02rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main p {
+        font-size: 1.016rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 360px) {
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+
+
+/*-------------------------------------------Footer--------------------------------------------*/
+
+footer {
+    background-color: orangered;
+    font-family: 'Wittgenstein', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.footer_caja {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+
+.derechos {
+    grid-column: 1 /4;
+   margin-top: 0.7rem;
+}
+
+
+
+footer img {
+    width: 2rem;
+    height: auto;
+}
+
+
+.mercadopago, .rapipago {
+    width: 3.1rem;
+    height: 1.7rem;
+}
+
+
+.ubicacion, .whatsapp {
+    width: 1.5rem;
+    height: auto;
+    padding-right: 0.5rem;
+}
+
+
+
+/*--------------------Footer Media Queries---------------*/
+
+@media (max-width: 1200px) {
+    footer {
+        font-size: 1rem;
+    }
+
+    footer img {
+        width: 1.9rem;
+        height: auto;
+    }
+
+    .mercadopago, .rapipago {
+        width: 2.8rem;
+        height: 1.5rem;
+    }
+
+}
+
+@media (max-width: 920px) {
+    footer {
+        font-size: 0.9rem;
+    }
+
+    footer img {
+        width: 1.7rem;
+        height: auto;
+    }
+
+    .mercadopago, .rapipago {
+        width: 2.6rem;
+        height: 1.3rem;
+    }
+
+    .ubicacion, .whatsapp {
+        width: 1.4rem;
+        height: auto;
+        padding-right: 0.4rem;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.88rem;
+    }
+
+    footer img {
+        width: 1.5rem;
+        height: auto;
+    }
+
+    .mercadopago, .rapipago {
+        width: 2.2rem;
+        height: 1.1rem;
+    }
+
+    .ubicacion, .whatsapp {
+        width: 1.2rem;
+        height: auto;
+        padding-right: 0.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.87rem;
+    }
+
+    footer img {
+        width: 1.4rem;
+        height: auto;
+    }
+
+    .mercadopago, .rapipago {
+        width: 2.1rem;
+        height: 1rem;
+    }
+
+    .ubicacion, .whatsapp {
+        width: 1.1rem;
+        height: auto;
+        padding-right: 0.2rem;
+    }
+
+}
+
+
+/*---------------------------------------------Botones---------------------------------*/
+
+.boton {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: orangered;
+    border-radius: 0.5rem;
+    border-color: rgb(210, 64, 20);
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    margin-top: 1rem;
+}
+
+/*------------------Botón Media Queries----------------------------*/
+
+@media (max-width: 1024px) {
+    .boton {
+        font-size: 1.15rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .boton {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .boton {
+        font-size: 0.95rem;
+        padding: 0.3rem 0.9rem;
+    }
+    
+}

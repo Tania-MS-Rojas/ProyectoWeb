@@ -1,0 +1,211 @@
+/*--------------------------------Texto-------------------------------------*/
+
+/*------------------Texto Empresa----------------*/
+
+.nuestra_empresa {
+    width: 85%;
+    height: auto;
+    margin: 7rem;
+    margin-inline: auto;
+}
+
+.texto_empresa {
+    width: 75%;
+}
+
+span {
+    color: orangered;
+    font-weight: 1000;
+}
+
+/*------------------Texto Fármacos----------------*/
+.nuestros_farmacos {
+    width: 85%;
+    height: auto;
+    margin-bottom: 7rem;
+    margin-inline: auto;
+}
+
+.titulo_farmacos {
+    text-align: right;
+}
+
+.texto_farmacos {
+    text-align: right;
+    width: auto;    
+}
+
+/*-----------------Texto Instalaciones--------------*/
+
+.nuestras_instalaciones {
+    width: 85%;
+    height: auto;
+    margin-bottom: 9rem;
+    margin-inline: auto;
+}
+
+
+.texto_instalaciones {
+    text-align: left;
+    width: 75%;
+}
+
+/*------------------Texto Equipo----------------*/
+.titulo_equipo {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+/*---------------------Textos Media Queries-----------------*/
+
+
+@media (max-width: 1024px) {
+    .nuestra_empresa {
+        margin-top: 6rem;
+    }
+
+    .nuestra_empresa, .nuestros_farmacos {
+        margin-bottom: 5.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto_empresa, .texto_instalaciones {
+        width: 85%;
+    }
+
+    .nuestras_instalaciones {
+        margin-bottom: 7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .nuestra_empresa {
+        margin-top: 5rem;
+    }
+
+    .nuestra_empresa, .nuestros_farmacos {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .titulo_equipo {
+        margin-bottom: 3.5rem;
+    }
+}
+
+
+/*--------------------------------------------------------Fotos--------------------------------------------------------------*/
+
+/*---------------------------------------Doctores-------------------------------------------------*/
+
+.foto_doctores {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(23, 62, 119);
+
+}
+
+
+.doctor, .doctora {
+    width: 50%;
+    height: auto;
+    align-self: center;
+    border: 7px groove orangered;
+}
+
+
+.caja_dr, .caja_dra {
+    display: flex;
+    flex-direction: column;
+    width:40%;   
+}
+
+.caja_dr p, .caja_dra p {
+    font-family: 'Trade_Winds', sans-serif;
+    margin-top: 1rem;
+    text-align: center;
+    color: rgb(23, 62, 119);
+}
+
+
+/*--------------------------------------------------Guardia y Equipo-----------------------------------------------*/
+
+.guardia_div, .equipo_div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.guardia {
+    width: 21%;
+    height: auto;
+    border: 7px groove orangered;
+}
+
+.guardia_div p, .equipo_div p {
+    font-family: 'Trade_Winds', sans-serif;
+    margin-top: 1rem;
+    color: rgb(23, 62, 119);
+}
+
+.equipo {
+    width: 40%;
+    height: auto;
+    border: 7px groove orangered;
+}
+
+.equipo_div {
+    margin-bottom: 5rem;
+}
+
+
+/*---------------Fotos Media Queries--------------------*/
+
+@media (max-width: 1024px) {
+    .doctor, .doctora {
+        width: 67%;
+        height: auto;
+    }
+    .guardia {
+        width: 27%;
+        height: auto;
+    }
+    .equipo {
+        width: 48%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .foto_doctores {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .doctor, .doctora {
+        width: 78%;
+        height: auto;
+    }
+
+    .guardia_div {
+        width: 50%;
+        height: auto;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .guardia {
+        width: 60%;
+        height: auto;
+    }
+}

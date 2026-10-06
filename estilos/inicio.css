@@ -1,0 +1,194 @@
+/*---------------------------------------------------Header----------------------------------------------------*/
+
+.header_inicio {
+    background-image: url('../imagenes/Portada3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 41rem;
+    width: auto;
+
+}
+
+.titulos {
+    padding-top: 28.5rem;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+}
+
+/*-----------------Header Media Queries-----------------*/
+
+@media (max-width: 1600px) {
+    .header_inicio {
+        height:33vw;
+    }
+
+    .titulos {
+        padding-top: 21rem;
+    }
+
+    .titulo {
+        font-size: 3.5rem;
+    }
+
+    .subtitulo {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1450px) {
+    .header_inicio {
+        height:30rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header_inicio {
+        height: 26rem;
+    }
+
+    .titulos {
+        padding-top: 18rem;
+    }
+
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .subtitulo {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_inicio {
+        height: 22rem;
+    }
+
+    .titulos {
+        padding-top: 15rem;
+    }
+
+    .titulo {
+        font-size: 2.7rem;
+    }
+
+    .subtitulo {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header_inicio {
+        height: 20rem;
+    }
+
+    .titulos {
+        padding-top: 13rem;
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+    }
+
+    .subtitulo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header_inicio {
+        height: 18rem;
+    }
+
+    .titulos {
+        padding-top: 12rem;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+    }
+
+    .subtitulo {
+        font-size: 1.18rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .titulos {
+        padding-top: 11rem;
+    }
+
+}
+
+/*-------------------------------------------Texto-------------------------------------------*/
+
+.introduccion {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem auto 0 auto;
+    width: 75%;
+    height: auto;
+}
+
+
+span {
+    color: orangered;
+    font-weight: 1000;
+}
+
+
+/*---------------------------------------------Video----------------------------------------*/
+
+.contenedor_video{
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    width: 30%;
+    height: auto;
+    margin: 5rem auto 3rem auto;
+}
+
+
+/*-----------------Video Media Queries-------------------*/
+
+@media (max-width: 1600px) {
+    .video {
+        width: 32%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .video {
+        width: 38%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .video {
+        width: 45%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .video {
+        width: 50%;
+        height: auto;
+    }
+}

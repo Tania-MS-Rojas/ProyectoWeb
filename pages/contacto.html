@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../estilos/contacto.css">
+<title>El Licántropo</title>
+</head>
+
+<body>
+    <!-------------------------------------------------HEADER Y NAV---------------------------------------------------------->
+    <header class="header_secciones">
+        <h1>Contacto</h1>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="nav2">
+        <select name="menu" onchange="location = this.value;">
+            <option value=""> ☰ </option>
+            <option value="../index.html">Inicio</option>
+            <option value="nosotros.html">Nosotros</option>
+            <option value="productos.html">Productos</option>
+            <option value="servicios.html">Servicios</option>
+            <option value="contacto.html">Contacto</option>
+        </select>
+    </div>
+
+    <!------------------------------------------------------MAIN--------------------------------------------------------------->
+    <main>
+        <!--------------------Formulario de contacto---------------------------->
+        <section>
+            <h3>Realizanos tu consulta</h3>
+                <form action="URL BUSCAR Y PONER" method="post">
+                    <div class="formulario">
+                
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required class="input1">
+                        
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="Tu correo" required class="input2">
+                        
+                        <label for="consulta">Consulta</label>
+                        <textarea name="mensaje" rows="5" cols="50" id="consulta" placeholder="Tu consulta" required class="textarea"></textarea>
+                        
+                        <input type="submit" value="Enviar" class="boton">
+                        
+                    </div>    
+                </form>
+        </section>
+
+        <!---------------------------Mapa dirección administrativa--------------------------------->
+        <section>
+            <h3>Dónde estamos</h3>
+                <div class="mapa_tabla">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6901379011615!2d-58.383808423684975!3d-34.6119961729513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad0cc5fe421%3A0xbf34a67648341ac0!2sAv.%209%20de%20Julio%202502%2C%20C1092%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1787937624920!5m2!1ses-419!2sar" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapa"></iframe>    
+
+                    <table border="1">
+                        <tr>
+                            <th colspan="2">Dirección Administrativa</th>
+                        </tr>
+                        <tr>
+                            <th>Dirección</th>
+                            <th>Teléfono</th>
+                        </tr>
+                        <tr>
+                            <td>9 de Julio 2502 - CABA</td>
+                            <td>1125255555</td>
+                        </tr>
+
+                    </table>
+                </div>
+        </section>
+
+        <!------------------------------------Reseñas----------------------------------------->
+        <section>
+            <h3>Lo que dicen nuestros clientes</h3>
+            
+                <div class="resenas">
+
+                    <div class="resena1"> 
+                        <div class="estrellas">  
+                        <img src="../imagenes/Messi.png" alt="cliente masculino" class="foto_cliente1">
+                        <h5>★★★★★</h5>
+                        </div>
+                        <p class="texto1">"Desde muy chico probé varios fármacos y la semana de luna llena me cansaba más al entrenar. Desde que probé Lobex Ultra® que no me doy cuenta en qué semana estoy. Muy recomendado para entrenamientos de alto rendimiento."</p>
+                    </div>
+
+                    <div class="resena2">
+                        <div class="estrellas">
+                        <img src="../imagenes/Gal Gadot.png" alt="cliente femenina" class="foto_cliente2">
+                        <h5>★★★★★</h5>
+                        </div>
+                        <p class="texto2">"Como hija de hombre lobo siempre tuve dolores de cabeza y cambios de humor durante la luna llena. Tomaba analgésicos comunes, pero desde que probé Lobato® mejoró no sólo el dolor, sino también el estado de ánimo. Lo super recomiendo."</p>
+                    </div>    
+
+                    <div class="resena3">
+                        <div class="estrellas">
+                        <img src="../imagenes/Cara Dune.png" alt="cliente femenina" class="foto_cliente3">
+                        <h5>★★★★★</h5>
+                        </div>
+                        <p class="texto3">"Siempre fui una loba particularmente salvaje en mis conversiones, y viví con el temor de escaparme. Desde que probé las instalaciones de El Licántropo, que me convierto con total
+                        tranquilidad, sabiendo que me están supervisando y están ahí para cuidarme. 100% recomendado."</p>
+                    </div>
+                </div>        
+        </section>
+
+    </main>
+
+    <!-------------------------------------------------FOOTER--------------------------------------------------------------->
+    <footer>
+        <div class="footer_caja">
+            <div>
+                <h4>Seguinos en Nuestras Redes</h4>
+                <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="../iconos/facebook.png" alt="Redirecciona a facebook" width="50" height="50"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../iconos/instagram.png" alt="Redirecciona a instagram" width="50" height="50"></a>
+                <a href="https://x.com/?lang=es" target="_blank"><img src="../iconos/twitter.png" alt="Redirecciona a twitter" width="50" height="50"></a>
+                <a href="https://www.tiktok.com/es/" target="_blank"><img src="../iconos/tik-tok.png" alt="Redirecciona a tik tok" width="50" height="50"></a>
+            </div>
+
+            <div>
+                <p><img src="../iconos/ubicacion2.png" class="ubicacion"><strong class="direccion">Dirección:</strong> 9 de Julio 2502 - CABA <br>
+                <img src="../iconos/whatsapp2.png" class="whatsapp"><strong>Teléfono:</strong> 1125255555</p>
+            </div>  
+            
+            <div>
+                <h4>Medios de Pago</h4>
+                <img src="../iconos/visa.png" class="visa">
+                <img src="../iconos/mastercard.png" class="mastercard">
+                <img src="../iconos/mercadopago2.png" class="mercadopago">
+                <img src="../iconos/rapipago fácil.jpeg" class="rapipago">
+            </div>
+
+            <div class="derechos">
+                <p><em>© El Licántropo. Todos los derechos reservados. 2026.</em></p>
+            </div>
+        </div>
+       
+    </footer>
+</body>
+</html>

@@ -1,0 +1,281 @@
+/*-----------------------------------Texto-----------------------------*/
+
+.argumentacion {
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+/*--------------Texto Media Queries-----------*/
+
+@media (max-width: 1600px) {
+    .argumentacion {
+        width: 85%;
+        height: auto;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .argumentacion {
+        width: 80%;
+        height: auto;
+        margin-inline: auto;
+    }
+}
+
+
+/*---------------------Fotos de las instalaciones---------------------*/
+.cabana_grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.8fr 0.1fr;
+    grid-template-rows: auto auto auto;
+    gap: 5rem;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 8rem;
+}
+
+.cabana1, .cabana2, .bosque {
+    grid-column: 1/2;
+    width: 66%;
+    height: auto;
+    border: 7px groove orangered;
+}
+
+
+.caja_cabana1 {
+    grid-column: 2;
+    justify-self: start;
+}
+
+
+.titulo_lista {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.servicios {
+    list-style-type: circle !important;
+    font-size: 1.4rem;
+    color: rgb(82, 88, 88);
+}
+
+
+/*----------Fotos de las instalaciones Media Queries-----------*/
+
+@media (max-width: 1600px) {
+    .cabana1, .cabana2, .bosque {
+        width: 72%;
+        height: auto;
+    }
+
+    .servicios {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cabana_grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.93fr 0.07fr;
+        grid-template-rows: auto auto auto;
+        gap: 3rem;
+    }
+
+    .cabana1, .cabana2, .bosque {
+        width: 74%;
+        height: auto;
+    }
+
+    .servicios {
+        font-size: 1.05rem;
+    }
+
+    .titulo_lista {
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabana_grid {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .cabana1, .cabana2, .bosque {
+        width: 70%;
+        height: auto;
+    }
+
+    .servicios {
+        font-size: 1rem;
+        text-align: center;
+        list-style-position: inside;
+        margin-bottom: 3rem;
+    }
+
+    .titulo_lista {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .texto_cabana2, .texto_bosque {
+        width: 70%;
+        height: auto;
+        text-align: justify;
+    }
+    .texto_cabana2 {
+        margin-bottom: 3rem;
+    }
+}
+
+/*--------------------------------------Mapa y parte de Reservas------------------------------*/
+
+
+.titulo_reservas {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.seccion_mapa {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 6rem;
+
+}
+
+.titulo_mapa {
+    margin-bottom: 2rem;
+}
+
+.mapa {
+    width: 40vw;
+    height: 60vh;
+    margin-bottom: 1rem;
+}
+
+.reservas {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+
+
+.aclaraciones p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+span {
+    color: orangered;
+}
+
+th {
+    color: rgb(82, 88, 88);
+}
+
+td {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+    color: rgb(82, 88, 88);
+}
+
+/*------------Mapa y parte de Reservas Media Queries--------------*/
+
+@media (max-width: 1600px) {
+    .aclaraciones p {
+        font-size: 1.1rem;
+    } 
+
+    td {
+        font-size: 1.2rem;
+    } 
+
+}
+
+@media (max-width: 1024px) {
+    .mapa {
+        width: 50vw;
+        height: 42vh;
+    }
+
+    .aclaraciones p {
+        font-size: 1rem;
+    }  
+
+    td {
+        font-size: 1.1rem;
+        padding: 0 0.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mapa {
+        width: 60vw;
+        height: 40vh;
+    }
+
+    .reservas {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .calendario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        }
+
+    .aclaraciones p {
+        font-size: 0.9rem;
+    } 
+
+    td {
+        font-size: 1.1rem;
+        padding: 0 0.6rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .mapa {
+        width: 65vw;
+        height: 55vh;
+    }
+
+    .aclaraciones p {
+        font-size: 0.85rem;
+    } 
+    
+    td {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .mapa {
+        width: 65vw;
+        height: 45vh;
+    }
+
+    .aclaraciones p {
+        width: 85%;
+        margin-inline: auto;
+    } 
+}
+
+@media (max-width: 360px) {
+    td {
+        font-size: 0.85rem;
+    }
+}
